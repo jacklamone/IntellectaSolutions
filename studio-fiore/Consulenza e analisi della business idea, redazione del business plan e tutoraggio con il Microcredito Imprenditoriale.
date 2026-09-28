@@ -1,0 +1,77 @@
+<!--TITLE Storie di successo · Consulenze aziendali finanza agevolata. Studio Dott. Stefano Fiore-->
+<!--DESC Alcuni dei progetti d'impresa che lo Studio Dott. Stefano Fiore ha accompagnato verso contributi e finanziamenti agevolati.-->
+<!--NAV storie-di-successo.html-->
+  <section class="page-hero on-dark">
+    <div class="glow glow--royal" aria-hidden="true"></div>
+    <div class="glow glow--lav" aria-hidden="true"></div>
+    <div class="iso-pattern" aria-hidden="true"></div>
+    <img class="hero-mark" src="assets/img/logo-light.webp" alt="" aria-hidden="true" width="640" height="634">
+    <div class="container">
+      <nav class="breadcrumb reveal" aria-label="Percorso"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Storie di successo</span></nav>
+      <p class="eyebrow reveal">Storie di successo</p>
+      <h1 class="reveal" data-delay="1">Progetti che sono diventati <em>realtà.</em></h1>
+      <p class="lead reveal" data-delay="2">Negli anni abbiamo accompagnato molte imprese a realizzare i loro obiettivi. Ecco alcuni progetti seguiti dalla prima analisi alla rendicontazione.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!--
+        SCHEDA STORIA — per aggiungerne una, copia un <article class="story"> e cambia i testi.
+        I nomi delle imprese non sono pubblicati: per nome e logo serve il consenso del cliente.
+      -->
+      <div class="stories">
+        <article class="story reveal">
+          <div class="story-media">
+            <span class="story-sector">Commercio all'ingrosso</span>
+            <p class="story-figure">quasi <em>€ 700.000</em></p>
+            <p class="story-figure-sub">di contributi agevolativi su un progetto di oltre € 1.900.000</p>
+          </div>
+          <div class="story-body">
+            <span class="story-tag">PIA Industria, Artigianato e Servizi · 2013</span>
+            <h3>Impresa operante nel commercio all'ingrosso di carne fresca, congelata e surgelata.</h3>
+            <p>Pacchetti Integrati di Agevolazione (PIA) Industria, Artigianato e Servizi, annualità 2013: ottenuti contributi per quasi € 700.000 su un investimento di oltre € 1.900.000.</p>
+          </div>
+        </article>
+        <article class="story reveal" data-delay="1">
+          <div class="story-media">
+            <span class="story-sector">Ristorazione</span>
+            <p class="story-figure"><em>€ 75.000</em> + oltre <em>€ 75.000</em></p>
+            <p class="story-figure-sub">di finanziamento agevolato e contributo a fondo perduto</p>
+          </div>
+          <div class="story-body">
+            <span class="story-tag">Finanziamento agevolato + fondo perduto</span>
+            <h3>Impresa operante nella ristorazione e somministrazione di alimenti e bevande.</h3>
+            <p>Pratica agevolativa, business plan, presentazione della domanda e rendicontazione delle spese.</p>
+          </div>
+        </article>
+        <article class="story reveal">
+          <div class="story-media">
+            <span class="story-sector">Bar</span>
+            <p class="story-figure">quasi <em>€ 130.000</em></p>
+            <p class="story-figure-sub">di sovvenzione in conto capitale</p>
+          </div>
+          <div class="story-body">
+            <span class="story-tag">Legge 3 Commercio Sardegna · 2022</span>
+            <h3>Impresa operante nel settore dei bar e altri esercizi simili senza cucina.</h3>
+            <p>Pratica agevolativa, presentazione della domanda e rendicontazione delle spese sul bando Legge 3 Commercio Sardegna, anno 2022.</p>
+          </div>
+        </article>
+        <article class="story reveal" data-delay="1">
+          <div class="story-media">
+            <span class="story-sector">Bar e caffetterie</span>
+            <p class="story-figure"><em>€ 75.000</em></p>
+            <p class="story-figure-sub">di finanziamento bancario per l'acquisto dell'azienda</p>
+          </div>
+          <div class="story-body">
+            <span class="story-tag">Microcredito Imprenditoriale</span>
+            <h3>Impresa operante nella somministrazione di bevande in bar e caffetterie.</h3>
+            <p>Consulenza e analisi della business idea, redazione del business plan e tutoraggio con il Microcredito Imprenditoriale.</p>
+          </div>
+        </article>
+      </div>
+      <p class="muted reveal" style="margin-top:40px;font-size:.9rem">Per riservatezza non pubblichiamo i nomi delle imprese. Importi e bandi sono quelli effettivamente ottenuti.</p>
+    </div>
+  </section>
+
+<!--CTA-->

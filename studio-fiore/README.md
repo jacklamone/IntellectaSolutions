@@ -14,24 +14,27 @@ relativi. Si può spostare così com'è su un proprio repository o sito Netlify
 | `index.html` | Home: hero, lo Studio, servizi, metodo, valori, intervista, CTA |
 | `chi-siamo.html` | Lo Studio, profilo del Dott. Fiore, come si svolge la consulenza, in cosa crediamo |
 | `cosa-facciamo.html` | Finanza agevolata (+ elenco in 9 punti), microcredito, certificazioni, formazione, metodo |
-| `storie-di-successo.html` | 4 schede in attesa dei casi reali (istruzioni nel commento HTML) |
+| `storie-di-successo.html` | 4 casi reali in forma anonima, con la cifra ottenuta in evidenza |
 | `contatti.html` | Recapiti + form Netlify `contatti-studio-fiore` |
-| `note-legali.html`, `privacy.html`, `cookie.html` | Note legali, privacy policy e cookie policy (bozze da completare con i dati del titolare) |
+| `note-legali.html`, `privacy.html`, `cookie.html` | Note legali, privacy policy e cookie policy con i dati del titolare |
 | `grazie.html` | Conferma invio del form senza JavaScript |
 
 Header e footer sono ripetuti in ogni pagina: una modifica al menu o ai
 recapiti va fatta in **tutti** i file `.html`.
 
-## Da completare prima della messa online
+## Stato dei contenuti
 
-- [ ] Email e telefono (footer di tutte le pagine + `contatti.html`): ora `[email da inserire]` / `[telefono da inserire]`
-- [ ] Link social (footer di tutte le pagine, pulsante flottante, `contatti.html`): WhatsApp `https://wa.me/[numero-whatsapp]` (numero con prefisso 39, senza + né spazi), Facebook `[pagina-facebook]`, Instagram `[profilo-instagram]`. LinkedIn già attivo.
-- [ ] P.IVA nel footer e dati del titolare (indirizzo, C.F., email, PEC, telefono) in `note-legali.html`, `privacy.html`, `cookie.html`
-- [ ] Confermare il tempo di conservazione delle richieste in `privacy.html` (ora `[12] mesi`) e far verificare le informative
-- [ ] Storie di successo: logo/foto, tipo di finanziamento, descrizione (4 schede)
-- [ ] Far verificare al cliente i dati biografici in `chi-siamo.html` (presi dall'intervista su Microfinanza n. 49)
+Dati ricevuti dal Dott. Fiore il 27/09/2026 (PDF compilato) e già inseriti:
+recapiti, orari, WhatsApp, P.IVA, C.F., PEC, denominazione, conservazione 12 mesi,
+profilo biografico corretto, nuovo testo di "Cosa ci distingue", Facebook, 4 storie di successo.
+
+Ancora da fare:
+
+- [ ] Dominio definitivo (non indicato): collegarlo, poi rimuovere `<meta name="robots" content="noindex, nofollow">` da tutte le pagine e aggiungere `canonical` e sitemap
+- [ ] Netlify → Forms → notifiche: inviare le richieste del modulo a fiorestefano@hotmail.com
+- [ ] Instagram: nessun profilo indicato, icona rimossa (aggiungerla se verrà creato)
+- [ ] Far rileggere privacy e note legali a un consulente legale
 - Nessuna foto del Dott. Fiore per scelta: il sito punta su serietà e metodo, non sul volto
-- [ ] Rimuovere `<meta name="robots" content="noindex, nofollow">` da tutte le pagine quando il sito va sul dominio definitivo, e aggiungere `canonical` e sitemap
 
 ## Note tecniche
 
