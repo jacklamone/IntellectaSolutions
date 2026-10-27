@@ -8,16 +8,18 @@
   var burger = document.querySelector(".nav-burger");
   var menu = document.getElementById("mobile-menu");
   if (burger && menu) {
-    burger.addEventListener("click", function () {
-      var open = menu.classList.toggle("is-open");
+    var openLabel = burger.getAttribute("data-label-open") || "Apri il menu";
+    var closeLabel = burger.getAttribute("data-label-close") || "Chiudi il menu";
+    function setMenu(open) {
+      menu.classList.toggle("is-open", open);
       burger.setAttribute("aria-expanded", open ? "true" : "false");
-      burger.setAttribute("aria-label", open ? "Chiudi il menu" : "Apri il menu");
+      burger.setAttribute("aria-label", open ? closeLabel : openLabel);
+    }
+    burger.addEventListener("click", function () {
+      setMenu(!menu.classList.contains("is-open"));
     });
     menu.addEventListener("click", function (e) {
-      if (e.target.closest("a")) {
-        menu.classList.remove("is-open");
-        burger.setAttribute("aria-expanded", "false");
-      }
+      if (e.target.closest("a")) setMenu(false);
     });
   }
 
@@ -136,8 +138,10 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var button = form.querySelector('button[type="submit"]');
+      var sending = button.getAttribute("data-sending") || "Invio...";
+      var failed = button.getAttribute("data-failed") || "Riprova — invio non riuscito";
       button.disabled = true;
-      button.textContent = "Invio...";
+      button.textContent = sending;
 
       var body = new URLSearchParams(new FormData(form)).toString();
       fetch("/", {
@@ -152,7 +156,7 @@
         })
         .catch(function () {
           button.disabled = false;
-          button.textContent = "Riprova — invio non riuscito";
+          button.textContent = failed;
         });
     });
   }
