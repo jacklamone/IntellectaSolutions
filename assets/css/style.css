@@ -39,7 +39,7 @@ a.card:focus-visible {
 }
 .card-more {
   margin-top: 1.25rem;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -65,10 +65,10 @@ a.card:hover .card-more { color: #fff; }
 .service-sheet .metodo-lead {
   max-width: 40rem;
   margin-top: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.0625rem;
   line-height: 1.55;
-  color: rgba(255, 255, 255, 0.78);
+  color: #f2f2f2;
 }
 .service-close {
   margin-top: 2.5rem;
@@ -127,12 +127,125 @@ a.card:hover .card-more { color: #fff; }
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 300;
-  font-size: 0.95rem;
+  color: #f2f2f2;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .contatti-details a { color: inherit; text-decoration: none; }
 .contatti-details a:hover { color: #fff; }
 
 .metodo.has-back .metodo-inner { padding-bottom: 8rem; }
+
+/* Leggibilità: stessi colori del brand, testo più pieno.
+   I rapporti sono calcolati sul nero e sul velo scuro sopra il video. */
+.hero-overlay {
+  background: radial-gradient(circle at 50% 45%,
+    rgba(1, 4, 15, 0.62) 0%,
+    rgba(1, 4, 15, 0.84) 62%,
+    rgba(0, 2, 8, 0.96) 100%);
+}
+.contatti-overlay {
+  background: radial-gradient(circle at 50% 50%,
+    rgba(0, 8, 4, 0.74) 0%,
+    rgba(0, 10, 6, 0.9) 58%,
+    rgba(0, 4, 2, 0.97) 100%);
+}
+.metodo::before {
+  background: linear-gradient(180deg,
+    rgba(3, 6, 12, 0.8) 0%,
+    rgba(3, 6, 12, 0.72) 45%,
+    rgba(3, 6, 12, 0.84) 100%);
+}
+.metodo .card {
+  background: rgba(6, 10, 18, 0.78);
+}
+.contatti-form {
+  background: rgba(6, 10, 18, 0.84);
+}
+
+.hero-lead {
+  color: #fff;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+}
+.stat-label {
+  color: #f2f2f2;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.eyebrow {
+  color: #e6e6e6;
+  font-weight: 500;
+}
+.card-bottom p,
+.card-bottom h2 + p {
+  color: #f3f3f3;
+  font-weight: 400;
+}
+.card-tags span {
+  color: #f2f2f2;
+  font-size: 0.8125rem;
+}
+.foot-label {
+  color: #f2f2f2;
+  font-size: 0.8125rem;
+}
+.contatti-msg > p {
+  color: #f2f2f2;
+  font-weight: 400;
+}
+.contatti-form input[type="text"],
+.contatti-form input[type="email"],
+.contatti-form textarea {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+}
+.contatti-form input:focus,
+.contatti-form textarea:focus {
+  border-bottom-color: #fff;
+}
+.contatti-form input::placeholder,
+.contatti-form textarea::placeholder {
+  color: #d2d2d2;
+  opacity: 1;
+  font-weight: 400;
+  -webkit-text-fill-color: #d2d2d2;
+}
+.form-success p {
+  color: #e8e8e8;
+  font-weight: 400;
+}
+.back-top-label {
+  color: #d6d6d6;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.nav-lang a,
+.mobile-lang a {
+  color: #d0d0d0;
+}
+.site-footer-meta {
+  color: #d6d6d6;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.site-footer-links a {
+  color: #d6d6d6;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.legal-inner .legal-updated {
+  color: #c8c8c8;
+  font-size: 0.8125rem;
+}
+.legal-inner p,
+.legal-inner li {
+  color: #f0f0f0;
+  font-weight: 400;
+}
+.legal-inner .legal-note {
+  color: #c8c8c8;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
