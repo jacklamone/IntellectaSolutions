@@ -68,7 +68,7 @@ a.card:hover .card-more { color: #fff; }
   font-weight: 400;
   font-size: 1.0625rem;
   line-height: 1.55;
-  color: #f2f2f2;
+  color: #e6e6e6;
 }
 .service-close {
   margin-top: 2.5rem;
@@ -127,7 +127,7 @@ a.card:hover .card-more { color: #fff; }
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  color: #f2f2f2;
+  color: #e0e0e0;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
@@ -137,62 +137,66 @@ a.card:hover .card-more { color: #fff; }
 
 .metodo.has-back .metodo-inner { padding-bottom: 8rem; }
 
-/* Leggibilità: stessi colori del brand, testo più pieno.
-   I rapporti sono calcolati sul nero e sul velo scuro sopra il video. */
-.hero-overlay {
-  background: radial-gradient(circle at 50% 45%,
-    rgba(1, 4, 15, 0.62) 0%,
-    rgba(1, 4, 15, 0.84) 62%,
-    rgba(0, 2, 8, 0.96) 100%);
-}
-.contatti-overlay {
-  background: radial-gradient(circle at 50% 50%,
-    rgba(0, 8, 4, 0.74) 0%,
-    rgba(0, 10, 6, 0.9) 58%,
-    rgba(0, 4, 2, 0.97) 100%);
-}
-.metodo::before {
-  background: linear-gradient(180deg,
-    rgba(3, 6, 12, 0.8) 0%,
-    rgba(3, 6, 12, 0.72) 45%,
-    rgba(3, 6, 12, 0.84) 100%);
-}
-.metodo .card {
-  background: rgba(6, 10, 18, 0.78);
-}
+/* Il velo dei video resta quello del foglio di base (commit 304b376).
+   La lastra del form resta più piena, così i campi si leggono senza
+   scurire tutto il fotogramma. */
 .contatti-form {
   background: rgba(6, 10, 18, 0.84);
 }
 
+/* Ombra locale solo sul testo che sta sopra il video. */
+.hero-title,
+.contatti-msg h1,
+.metodo-title,
+.card-bottom h2,
+.card-bottom h3,
+.stat-value,
+.foot-words span {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45), 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.hero-lead,
+.contatti-msg > p,
+.contatti-details,
+.stat-label,
+.badge-text,
+.eyebrow,
+.foot-label,
+.card-bottom p,
+.card-tags span,
+.card-more,
+.service-sheet .metodo-lead,
+.back-top-label {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
 .hero-lead {
-  color: #fff;
+  color: #e6e6e6;
   font-weight: 400;
   font-size: clamp(1rem, 1.6vw, 1.125rem);
 }
 .stat-label {
-  color: #f2f2f2;
+  color: #e0e0e0;
   font-weight: 400;
   font-size: 0.875rem;
 }
 .eyebrow {
-  color: #e6e6e6;
+  color: #e0e0e0;
   font-weight: 500;
 }
-.card-bottom p,
-.card-bottom h2 + p {
-  color: #f3f3f3;
+.card-bottom p {
+  color: #e6e6e6;
   font-weight: 400;
 }
 .card-tags span {
-  color: #f2f2f2;
+  color: #e0e0e0;
   font-size: 0.8125rem;
 }
 .foot-label {
-  color: #f2f2f2;
+  color: #e0e0e0;
   font-size: 0.8125rem;
 }
 .contatti-msg > p {
-  color: #f2f2f2;
+  color: #e6e6e6;
   font-weight: 400;
 }
 .contatti-form input[type="text"],
@@ -207,45 +211,45 @@ a.card:hover .card-more { color: #fff; }
 }
 .contatti-form input::placeholder,
 .contatti-form textarea::placeholder {
-  color: #d2d2d2;
+  color: #d8d8d8;
   opacity: 1;
   font-weight: 400;
-  -webkit-text-fill-color: #d2d2d2;
+  -webkit-text-fill-color: #d8d8d8;
 }
 .form-success p {
-  color: #e8e8e8;
+  color: #e6e6e6;
   font-weight: 400;
 }
 .back-top-label {
-  color: #d6d6d6;
+  color: #d8d8d8;
   font-size: 0.8125rem;
   font-weight: 500;
 }
 .nav-lang a,
 .mobile-lang a {
-  color: #d0d0d0;
+  color: #d8d8d8;
 }
 .site-footer-meta {
-  color: #d6d6d6;
+  color: #d8d8d8;
   font-weight: 400;
   font-size: 0.875rem;
 }
 .site-footer-links a {
-  color: #d6d6d6;
+  color: #d8d8d8;
   font-size: 0.8125rem;
   font-weight: 500;
 }
 .legal-inner .legal-updated {
-  color: #c8c8c8;
+  color: #d8d8d8;
   font-size: 0.8125rem;
 }
 .legal-inner p,
 .legal-inner li {
-  color: #f0f0f0;
+  color: #e6e6e6;
   font-weight: 400;
 }
 .legal-inner .legal-note {
-  color: #c8c8c8;
+  color: #d8d8d8;
   font-size: 0.875rem;
   font-weight: 400;
 }
